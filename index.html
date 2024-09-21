@@ -3,22 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Sebastián</title>
+    <title>Portada - Portfolio de Sebastián</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #sidebar {
+            float: left;
+            width: 20%;
+            height: 100vh;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #sidebar ul li {
+            padding: 10px 0;
+        }
+        #sidebar ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        #sidebar ul li a.active {
+            color: blue;
+        }
+        #content {
+            margin-left: 25%;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <nav id="navbar">
-        <ul id="menu" class="menu">
-            <li><a href="home.html" class="nav-link">Inicio</a></li>
-            <li><a href="about.html" class="nav-link">Sobre mí</a></li>
-            <li><a href="portfolio.html" class="nav-link">Portafolio</a></li>
-            <li><a href="resume.html" class="nav-link">Currículum</a></li>
-            <li><a href="services.html" class="nav-link">Servicios</a></li>
-            <li><a href="testimonials.html" class="nav-link">Testimonios</a></li>
-            <li><a href="contact.html" class="nav-link">Contacto</a></li>
-            <li><a href="socials.html" class="nav-link">Redes Sociales</a></li>
-            <li><a href="skills.html" class="nav-link">Habilidades</a></li>
-            <li><a href="certifications.html" class="nav-link">Certificaciones</a></li>
+
+    <!-- Barra lateral con menú -->
+    <div id="sidebar">
+        <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="index.html" class="active">Portada</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="portfolio.html">Portafolio</a></li>
+            <li><a href="resume.html">Currículum</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="testimonials.html">Testimonios</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="socials.html">Redes Sociales</a></li>
+            <li><a href="skills.html">Habilidades</a></li>
+            <li><a href="certifications.html">Certificaciones</a></li>
         </ul>
-    </nav>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="content">
+        <h1>Portada de mi portfolio</h1>
+        <p>Explora mi trabajo y conoce más sobre mi experiencia profesional y mis habilidades.</p>
+    </div>
+
 </body>
 </html>
