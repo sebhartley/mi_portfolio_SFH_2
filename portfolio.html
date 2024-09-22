@@ -35,6 +35,17 @@
             margin-left: 25%;
             padding: 20px;
         }
+        img {
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .project {
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 <body>
@@ -42,7 +53,7 @@
     <!-- Barra lateral con menú -->
     <div id="sidebar">
         <ul>
-            <li><a href="home.html">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="about.html">Sobre mí</a></li>
             <li><a href="portfolio.html" class="active">Portafolio</a></li>
             <li><a href="resume.html">Currículum</a></li>
@@ -59,10 +70,32 @@
     <div id="content">
         <h1>Mi portafolio</h1>
         <p>Aquí puedes encontrar algunos de los proyectos más interesantes en los que he trabajado.</p>
-    </div>
 
-     <img src="filter_master.png" alt="Project 1" width="400" height="200">
-            <p>Este es uno de mis proyectos más recientes, un script que permite a los usuarios gestionar grandes volumes de datos filtrando por palabras clave de manera eficiente.</p>
+        <!-- Proyecto 1 -->
+        <div class="project">
+            <img src="filter_master.png" alt="Proyecto de filtrado de datos" width="400" height="200">
+            <p><strong>Filtrado de Datos Avanzado</strong>: Un script que permite a los usuarios gestionar grandes volúmenes de datos filtrando por palabras clave de manera eficiente.</p>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project">
+            <img src="images/ml_model.png" alt="Proyecto de Machine Learning" width="400" height="200">
+            <p><strong>Predicción de Ventas con Machine Learning</strong>: Utilicé algoritmos de regresión lineal y árboles de decisión para crear un modelo que predice las ventas de una cadena de tiendas en función de datos históricos y tendencias estacionales.</p>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project">
+            <img src="images/ds_dashboard.png" alt="Dashboard interactivo" width="400" height="200">
+            <p><strong>Dashboard Interactivo para Análisis de Clientes</strong>: Creación de un dashboard interactivo en Python (con Dash) para analizar el comportamiento de los clientes, mostrando visualizaciones clave como el valor del cliente a lo largo del tiempo y patrones de compra.</p>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="project">
+            <img src="images/nlp_project.png" alt="Proyecto de procesamiento de lenguaje natural" width="400" height="200">
+            <p><strong>Análisis de Sentimientos en Redes Sociales</strong>: Desarrollé un modelo de procesamiento de lenguaje natural (NLP) que analiza las publicaciones en redes sociales para detectar el sentimiento general sobre diferentes productos, utilizando técnicas de clasificación con Naive Bayes y redes neuronales.</p>
+        </div>
+
+    </div>
 
 </body>
 </html>
