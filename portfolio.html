@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Portafolio - Portfolio de Sebastián</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #sidebar {
+            float: left;
+            width: 20%;
+            height: 100vh;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #sidebar ul li {
+            padding: 10px 0;
+        }
+        #sidebar ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        #sidebar ul li a.active {
+            color: blue;
+        }
+        #content {
+            margin-left: 25%;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Portafolio</h1>
-    <p>Este es uno de mis proyectos recientes: un script que permite gestionar grandes volúmenes de datos filtrando por palabras clave de manera eficiente.</p>
+
+    <!-- Barra lateral con menú -->
+    <div id="sidebar">
+        <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="index.html">Portada</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="portfolio.html" class="active">Portafolio</a></li>
+            <li><a href="resume.html">Currículum</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="testimonials.html">Testimonios</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="socials.html">Redes Sociales</a></li>
+            <li><a href="skills.html">Habilidades</a></li>
+            <li><a href="certifications.html">Certificaciones</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="content">
+        <h1>Mi portafolio</h1>
+        <p>Aquí puedes encontrar algunos de los proyectos más interesantes en los que he trabajado.</p>
+    </div>
+
 </body>
 </html>
