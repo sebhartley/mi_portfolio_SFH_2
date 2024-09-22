@@ -3,10 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonios</title>
+    <title>Testimonios - Portfolio de Sebastián</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #sidebar {
+            float: left;
+            width: 20%;
+            height: 100vh;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #sidebar ul li {
+            padding: 10px 0;
+        }
+        #sidebar ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        #sidebar ul li a.active {
+            color: blue;
+        }
+        #content {
+            margin-left: 25%;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Testimonios</h1>
-    <blockquote>"Sebastián es un profesional dedicado, capaz de enfrentar desafíos complejos con soluciones creativas y efectivas." - Mariano Taborcias</blockquote>
+
+    <!-- Barra lateral con menú -->
+    <div id="sidebar">
+        <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="index.html">Portada</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="portfolio.html">Portafolio</a></li>
+            <li><a href="resume.html">Currículum</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="testimonials.html" class="active">Testimonios</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="socials.html">Redes Sociales</a></li>
+            <li><a href="skills.html">Habilidades</a></li>
+            <li><a href="certifications.html">Certificaciones</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="content">
+        <h1>Testimonios</h1>
+        <p>Comentarios de personas con las que he trabajado:</p>
+        <blockquote>
+            "Sebastián es un profesional con una gran capacidad de resolución de problemas y pensamiento crítico."
+        </blockquote>
+        <blockquote>
+            "Su conocimiento en machine learning y análisis de datos ha sido clave en nuestros proyectos."
+        </blockquote>
+    </div>
+
 </body>
 </html>
