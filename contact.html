@@ -7,6 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
         }
         #sidebar {
             float: left;
@@ -15,6 +20,7 @@
             background-color: #f4f4f4;
             padding: 10px;
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            position: fixed;
         }
         #sidebar ul {
             list-style-type: none;
@@ -34,6 +40,36 @@
         #content {
             margin-left: 25%;
             padding: 20px;
+            flex: 1;
+        }
+        h1 {
+            color: #333;
+        }
+        .social-links {
+            list-style-type: none;
+            padding: 0;
+        }
+        .social-links li {
+            margin-bottom: 15px;
+        }
+        .social-links li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #000;
+            display: flex;
+            align-items: center;
+        }
+        .social-links li img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
         }
     </style>
 </head>
@@ -43,15 +79,9 @@
     <div id="sidebar">
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre mí</a></li>
             <li><a href="portfolio.html">Portafolio</a></li>
             <li><a href="resume.html">Currículum</a></li>
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="testimonials.html">Testimonios</a></li>
             <li><a href="contact.html" class="active">Contacto</a></li>
-            <li><a href="socials.html">Redes Sociales</a></li>
-            <li><a href="skills.html">Habilidades</a></li>
-            <li><a href="certifications.html">Certificaciones</a></li>
         </ul>
     </div>
 
@@ -60,6 +90,28 @@
         <h1>Contacto</h1>
         <p>Puedes contactarme a través del siguiente correo:</p>
         <p><a href="mailto:sebastianfernandezhartley@outlook.com">sebastianfernandezhartley@outlook.com</a></p>
+
+        <h1>Redes Sociales</h1>
+        <p>Conéctate conmigo a través de mis redes sociales:</p>
+        <ul class="social-links">
+            <li>
+                <a href="https://linkedin.com/in/sebastianfernandezhartley" target="_blank">
+                    <img src="linkedin_logo.png" alt="LinkedIn Logo">
+                    LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/sebhartley" target="_blank">
+                    <img src="github_logo.png" alt="GitHub Logo">
+                    GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Sección de pie de página -->
+    <div class="footer">
+        <p>© 2024 Sebastián Fernandez Hartley. Todos los derechos reservados.</p>
     </div>
 
 </body>
