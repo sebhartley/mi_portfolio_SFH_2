@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Portfolio de Sebastián</title>
+    <title>Inicio - Portfolio de Sebastián</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         #sidebar {
             float: left;
@@ -35,6 +37,24 @@
             margin-left: 25%;
             padding: 20px;
         }
+        img {
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
@@ -42,8 +62,7 @@
     <!-- Barra lateral con menú -->
     <div id="sidebar">
         <ul>
-            <li><a href="home.html" class="active">Inicio</a></li>
-            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="index.html" class="active">Inicio</a></li>
             <li><a href="portfolio.html">Portafolio</a></li>
             <li><a href="resume.html">Currículum</a></li>
             <li><a href="services.html">Servicios</a></li>
@@ -59,8 +78,23 @@
     <div id="content">
         <h1>Bienvenido a mi portfolio</h1>
         <img src="mi_imagen.jpg" alt="Foto de Sebastián" width="300" height="300">
-        <p>¡Hola! Soy Sebastián Fernandez Hartley, te invito a explorar mi trabajo y conocer más sobre mi experiencia profesional y mis habilidades.</p>
+        <p>Soy Sebastián Fernandez Hartley, científico de datos y desarrollador con experiencia en proyectos complejos dentro de Mercado Libre.</p>
+
+        <!-- Sección Sobre Mí -->
+        <section id="about">
+            <h2>Sobre Mí</h2>
+            <p>Soy un profesional apasionado por la tecnología, con una sólida formación en Data Science, Python, y una dedicación constante para mejorar mis habilidades.</p>
+        </section>
+
+        <!-- Sección de pie de página -->
+        <div class="footer">
+            <p>© 2024 Sebastián Fernandez Hartley. Todos los derechos reservados.</p>
+        </div>
     </div>
+
+</body>
+</html>
+
 
 </body>
 </html>
