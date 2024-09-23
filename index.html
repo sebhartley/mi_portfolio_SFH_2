@@ -9,6 +9,9 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
         }
         #sidebar {
             float: left;
@@ -34,6 +37,7 @@
             color: blue;
         }
         #content {
+            flex: 1;
             margin-left: 25%;
             padding: 20px;
         }
@@ -51,9 +55,10 @@
         .footer {
             background-color: #333;
             color: white;
-            padding: 20px;
             text-align: center;
-            margin-top: 50px;
+            padding: 20px;
+            position: relative;
+            width: 100%;
         }
     </style>
 </head>
@@ -80,17 +85,12 @@
             <h2>Sobre Mí</h2>
             <p>Soy un profesional apasionado por la tecnología, con una sólida formación en Data Science, Python, y una dedicación constante para mejorar mis habilidades.</p>
         </section>
+    </div>
 
-        <!-- Sección de pie de página -->
-        <div class="footer">
-            <p>© 2024 Sebastián Fernandez Hartley. Todos los derechos reservados.</p>
-        </div>
+    <!-- Sección de pie de página -->
+    <div class="footer">
+        <p>© 2024 Sebastián Fernandez Hartley. Todos los derechos reservados.</p>
     </div>
 
 </body>
 </html>
-
-
-</body>
-</html>
-
