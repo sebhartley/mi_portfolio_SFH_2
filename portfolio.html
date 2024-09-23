@@ -7,6 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
         }
         #sidebar {
             float: left;
@@ -15,6 +20,7 @@
             background-color: #f4f4f4;
             padding: 10px;
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            position: fixed;
         }
         #sidebar ul {
             list-style-type: none;
@@ -34,17 +40,30 @@
         #content {
             margin-left: 25%;
             padding: 20px;
+            flex: 1;
         }
         img {
-            border-radius: 8px;
+            border-radius: 12px;
             margin-bottom: 15px;
         }
         p {
             font-size: 1rem;
             line-height: 1.5;
         }
+        h1 {
+            color: #333;
+        }
         .project {
             margin-bottom: 40px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
         }
     </style>
 </head>
@@ -54,7 +73,6 @@
     <div id="sidebar">
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre mí</a></li>
             <li><a href="portfolio.html" class="active">Portafolio</a></li>
             <li><a href="resume.html">Currículum</a></li>
             <li><a href="services.html">Servicios</a></li>
@@ -91,7 +109,11 @@
         <div class="project">
             <p><strong>Análisis de Sentimientos en Redes Sociales</strong>: Desarrollé un modelo de procesamiento de lenguaje natural (NLP) que analiza las publicaciones en redes sociales para detectar el sentimiento general sobre diferentes productos, utilizando técnicas de clasificación con Naive Bayes y redes neuronales.</p>
         </div>
+    </div>
 
+    <!-- Sección de pie de página -->
+    <div class="footer">
+        <p>© 2024 Sebastián Fernandez Hartley. Todos los derechos reservados.</p>
     </div>
 
 </body>
