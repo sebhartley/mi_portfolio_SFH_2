@@ -7,6 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
         }
         #sidebar {
             float: left;
@@ -15,6 +20,7 @@
             background-color: #f4f4f4;
             padding: 10px;
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            position: fixed;
         }
         #sidebar ul {
             list-style-type: none;
@@ -34,6 +40,30 @@
         #content {
             margin-left: 25%;
             padding: 20px;
+            flex: 1;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        blockquote {
+            background-color: #f9f9f9;
+            border-left: 10px solid #ccc;
+            margin: 20px 0;
+            padding: 10px 20px;
+            font-style: italic;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
         }
     </style>
 </head>
@@ -43,15 +73,9 @@
     <div id="sidebar">
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre mí</a></li>
             <li><a href="portfolio.html">Portafolio</a></li>
             <li><a href="resume.html" class="active">Currículum</a></li>
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="testimonials.html">Testimonios</a></li>
             <li><a href="contact.html">Contacto</a></li>
-            <li><a href="socials.html">Redes Sociales</a></li>
-            <li><a href="skills.html">Habilidades</a></li>
-            <li><a href="certifications.html">Certificaciones</a></li>
         </ul>
     </div>
 
@@ -59,7 +83,54 @@
     <div id="content">
         <h1>Mi currículum</h1>
         <p>Aquí puedes descargar mi currículum actualizado en formato PDF:</p>
-        <a href="CV Sebastian Fernandez Hartley.pdf" download>Descargar Currículum</a>
+        <a href="CV_Sebastian_Fernandez_Hartley.pdf" download>Descargar Currículum</a>
+
+        <!-- Habilidades -->
+        <h1>Habilidades</h1>
+        <ul>
+            <li>Análisis de datos y machine learning</li>
+            <li>Desarrollo web full-stack (HTML, CSS, JavaScript, Python)</li>
+            <li>Automatización de procesos</li>
+            <li>SQL y gestión de bases de datos</li>
+            <li>Optimización de algoritmos</li>
+            <li>Desarrollo de aplicaciones de inteligencia artificial</li>
+        </ul>
+
+        <!-- Certificaciones -->
+        <h1>Certificaciones</h1>
+        <ul>
+            <li>Certificación en Análisis de Datos - Coursera</li>
+            <li>Certificación en Machine Learning - Stanford University (Coursera)</li>
+            <li>Full-Stack Web Development - Udemy</li>
+            <li>Certificación en SQL y bases de datos - DataCamp</li>
+        </ul>
+
+        <!-- Servicios -->
+        <h1>Mis Servicios</h1>
+        <p>Ofrezco servicios de consultoría en análisis de datos, desarrollo web y machine learning.</p>
+        <ul>
+            <li>Desarrollo de modelos predictivos</li>
+            <li>Visualización de datos</li>
+            <li>Automatización de procesos</li>
+            <li>Desarrollo de aplicaciones web personalizadas</li>
+        </ul>
+
+        <!-- Testimonios -->
+        <h1>Testimonios</h1>
+        <p>Comentarios de personas con las que he trabajado:</p>
+        <blockquote>
+            "Sebastián es un profesional con una gran capacidad de resolución de problemas y pensamiento crítico."
+            <p>Mariano Taborcias</p>
+        </blockquote>
+        <blockquote>
+            "Su conocimiento en machine learning y análisis de datos ha sido clave en nuestros proyectos."
+            <p>Rosalia Kaiser</p>
+        </blockquote>
+    </div>
+
+    <!-- Sección de pie de página -->
+    <div class="footer">
+        <p>© 2024 Sebastián Fernandez Hartley. Todos los derechos reservados.</p>
     </div>
 
 </body>
